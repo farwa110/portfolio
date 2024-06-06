@@ -1,0 +1,121 @@
+body {
+  background: #af9f9f;
+}
+/*
+=============== 
+Variables
+===============
+*/
+:root {
+  --ff-primary: "Roboto", monospace;
+  --ff-secondary: "Roboto flex", sans-serif;
+  --spacing: 0.25rem;
+  --radius: 0.5rem;
+}
+/*
+=============== 
+Global Styles
+===============
+*/
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: var(--spacing);
+  text-transform: capitalize;
+  line-height: 1.25;
+  font-family: var(--ff-primary);
+  color: white;
+  font-family: Roboto monospace;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 1.5rem;
+}
+.underline h2 {
+  white-space: nowrap;
+}
+
+h3 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+h4 {
+  font-size: 0.875rem;
+}
+
+img {
+  display: block;
+  height: 50%;
+  width: 100%;
+}
+.col3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  gap: 20px;
+}
+.col3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 100px;
+}
+
+.tema-image {
+  position: relative;
+}
+
+.tema-image img {
+  width: 100%;
+  display: block;
+}
+
+.tema-image p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  z-index: 1;
+  width: 80%;
+}
+
+div:nth-child(odd) ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.tema-image + div {
+  display: flex;
+  flex-direction: column;
+}
+
+ul {
+  margin-top: 20px;
+}
+
+.button-view,
+.button-source {
+  padding: 10px 20px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.button-view:hover,
+.button-source:hover {
+  background-color: #0056b3;
+}
+
+.button-view {
+  margin-right: 10px;
+}
