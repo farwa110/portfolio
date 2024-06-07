@@ -1,5 +1,5 @@
 body {
-  background: #af9f9f;
+  background: black;
 }
 /*
 =============== 
@@ -53,20 +53,17 @@ img {
   height: 50%;
   width: 100%;
 }
-.col3 {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  justify-content: center;
-  gap: 20px;
-}
+
 .col3 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 100px;
+  margin-top: 5rem;
 }
 
 .tema-image {
   position: relative;
+  border: solid 10px rgba(20, 255, 236, 1);
 }
 
 .tema-image img {
@@ -76,46 +73,100 @@ img {
 
 .tema-image p {
   position: absolute;
-  top: 50%;
+  top: 35%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
   text-align: center;
   background-color: rgba(0, 0, 0, 0.5);
-  padding: 10px;
+  padding: 8px;
   z-index: 1;
   width: 80%;
+  font-style: var(--ff-primary);
 }
 
-div:nth-child(odd) ul {
+li {
+  margin-bottom: 10px;
+  font-style: var(--ff-secondary);
+  color: white;
+}
+
+/* div:nth-child(odd) ul {
   list-style: none;
   padding-left: 0;
-}
+} */
 
-.tema-image + div {
+/* .tema-image + div {
   display: flex;
   flex-direction: column;
-}
+} */
 
 ul {
-  margin-top: 20px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .button-view,
 .button-source {
   padding: 10px 20px;
   border: none;
-  background-color: #007bff;
-  color: white;
+  background-color: rgba(20, 255, 236, 1);
+  color: black;
   cursor: pointer;
   margin-top: 10px;
+  font-style: var(--ff-primary);
 }
 
 .button-view:hover,
 .button-source:hover {
-  background-color: #0056b3;
+  background-color: whitesmoke;
 }
 
 .button-view {
-  margin-right: 10px;
+  margin-left: 25%;
+}
+.col2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 100px;
+  margin-top: 5rem;
+}
+
+/*
+=============== 
+footer Section
+===============
+*/
+
+footer {
+  background-color: #001412;
+  opacity: 0.7;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  margin-top: 12rem;
+  color: white;
+}
+.social-icons img {
+  width: 40px;
+  height: 40px;
+  vertical-align: middle;
+}
+.footer-text p {
+  margin: 10px 0;
+}
+
+.footer-text {
+  margin-bottom: 10px;
+}
+
+.footer-social-icons {
+  margin-top: 10px;
+}
+.social-icons {
+  margin-top: 20px;
+}
+
+.social-icons a {
+  margin: 0 10px;
 }

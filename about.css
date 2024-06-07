@@ -1,0 +1,159 @@
+body {
+  background: black;
+}
+/*
+=============== 
+Variables
+===============
+*/
+:root {
+  --ff-primary: "Roboto", monospace;
+  --ff-secondary: "Roboto flex", sans-serif;
+  --spacing: 0.25rem;
+  --radius: 0.5rem;
+}
+/*
+=============== 
+Global Styles
+===============
+*/
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: var(--spacing);
+  text-transform: capitalize;
+  line-height: 1.25;
+  font-family: var(--ff-primary);
+  color: white;
+  font-family: Roboto monospace;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 1.5rem;
+}
+.underline h2 {
+  white-space: nowrap;
+}
+
+h3 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+h4 {
+  font-size: 0.875rem;
+}
+/* .my-story {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 12rem;
+}
+.my-text {
+  border: solid 1px white;
+}
+.ambitionstory {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 12rem;
+}
+.my-ambition {
+  border: solid 1px white;
+} */
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 12rem;
+}
+
+.my-text,
+.my-ambition {
+  text-align: center;
+  border: solid 5px rgba(20, 255, 236, 1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.my-text {
+  height: 764px; /* Set the height to match the image */
+  width: 650px; /* Set the width to match the image */
+  box-sizing: border-box;
+}
+.my-ambition {
+  height: 626px; /* Set the height to match the image */
+  width: 516px; /* Set the width to match the image */
+  box-sizing: border-box;
+}
+.my-image,
+.ambition-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.my-image img,
+.ambition-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+h2.mission span {
+  color: rgba(20, 255, 236, 1);
+}
+
+p.support {
+  margin: 0;
+  font-style: var(--ff-secondary);
+  color: white;
+  letter-spacing: 5px;
+}
+
+/*
+=============== 
+footer Section
+===============
+*/
+
+footer {
+  background-color: #001412;
+  opacity: 0.7;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  margin-top: 12rem;
+  color: white;
+}
+.social-icons img {
+  width: 40px;
+  height: 40px;
+  vertical-align: middle;
+}
+.footer-text p {
+  margin: 10px 0;
+}
+
+.footer-text {
+  margin-bottom: 10px;
+}
+
+.footer-social-icons {
+  margin-top: 10px;
+}
+.social-icons {
+  margin-top: 20px;
+}
+
+.social-icons a {
+  margin: 0 10px;
+}
