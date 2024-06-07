@@ -62,8 +62,12 @@ img {
 }
 
 .tema-image {
-  position: relative;
+  /* position: relative; */
   border: solid 10px rgba(20, 255, 236, 1);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .tema-image img {
@@ -73,16 +77,15 @@ img {
 
 .tema-image p {
   position: absolute;
-  top: 35%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   color: white;
   text-align: center;
   background-color: rgba(0, 0, 0, 0.5);
   padding: 8px;
   z-index: 1;
-  width: 80%;
+  width: 20%;
+  margin-top: 10%;
   font-style: var(--ff-primary);
+  font-size: 27px;
 }
 
 li {
@@ -103,7 +106,6 @@ li {
 
 ul {
   margin-top: 50px;
-  margin-bottom: 50px;
 }
 
 .button-view,
@@ -115,6 +117,7 @@ ul {
   cursor: pointer;
   margin-top: 10px;
   font-style: var(--ff-primary);
+  width: 113px;
 }
 
 .button-view:hover,
@@ -122,16 +125,22 @@ ul {
   background-color: whitesmoke;
 }
 
-.button-view {
+/* .button-view {
   margin-left: 25%;
-}
+} */
 .col2 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 100px;
   margin-top: 5rem;
 }
-
+.button-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 5%;
+  width: 100%;
+}
 /*
 =============== 
 footer Section
@@ -147,10 +156,14 @@ footer {
   margin-top: 12rem;
   color: white;
 }
+.social-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .social-icons img {
   width: 40px;
   height: 40px;
-  vertical-align: middle;
 }
 .footer-text p {
   margin: 10px 0;
@@ -169,4 +182,41 @@ footer {
 
 .social-icons a {
   margin: 0 10px;
+}
+@media screen and (max-width: 1300px) {
+  .col3 {
+    gap: 20px;
+  }
+  .col2 {
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 1180px) {
+  .tema-image p {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 920px) {
+  .col3,
+  .col2 {
+    grid-template-columns: 550px;
+    justify-content: center;
+  }
+  .tema-image p {
+    font-size: 25px;
+    width: 35%;
+    margin-top: 20%;
+  }
+}
+@media screen and (max-width: 620px) {
+  .col3,
+  .col2 {
+    grid-template-columns: 450px;
+  }
+}
+@media screen and (max-width: 460px) {
+  .col3,
+  .col2 {
+    grid-template-columns: 400px;
+  }
 }

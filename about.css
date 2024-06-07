@@ -47,32 +47,28 @@ h3 {
 h4 {
   font-size: 0.875rem;
 }
-/* .my-story {
+.my-story {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
-  justify-content: center;
-  margin-top: 12rem;
-}
-.my-text {
-  border: solid 1px white;
-}
-.ambitionstory {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
-  justify-content: center;
-  margin-top: 12rem;
-}
-.my-ambition {
-  border: solid 1px white;
-} */
-.grid-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 5px;
+  grid-template-columns: 1.3fr 0.7fr;
+  gap: 5rem;
   justify-content: center;
   align-items: center;
+  margin: 4rem 1rem;
+}
+/* .my-text {
+  border: solid 1px white;
+} */
+.ambitionstory {
+  display: grid;
+  grid-template-columns: 0.7fr 1.3fr;
+  gap: 5rem;
+  justify-content: center;
+  margin: 4rem 1rem;
+}
+/* .my-ambition {
+  border: solid 1px white;
+}  */
+.grid-container {
   margin-top: 12rem;
 }
 
@@ -86,13 +82,13 @@ h4 {
   align-items: center;
 }
 .my-text {
-  height: 764px; /* Set the height to match the image */
-  width: 650px; /* Set the width to match the image */
+  height: 100%; /* Set the height to match the image */
+  width: 100%; /* Set the width to match the image */
   box-sizing: border-box;
 }
 .my-ambition {
-  height: 626px; /* Set the height to match the image */
-  width: 516px; /* Set the width to match the image */
+  height: 100%; /* Set the height to match the image */
+  width: 100%; /* Set the width to match the image */
   box-sizing: border-box;
 }
 .my-image,
@@ -104,8 +100,8 @@ h4 {
 
 .my-image img,
 .ambition-image img {
-  max-width: 100%;
-  height: auto;
+  width: 100%;
+  height: 100%;
 }
 
 h2.mission span {
@@ -118,7 +114,90 @@ p.support {
   color: white;
   letter-spacing: 5px;
 }
+.mission {
+  font-size: 45px;
+}
+.support {
+  font-size: 24px;
+  padding: 0px 30px;
+  line-height: 2;
+}
+.ambitionstory-last {
+  margin: 4rem 1rem;
+}
+.ambition-last {
+  padding-bottom: 3rem;
+}
+.education {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  grid-template-rows: 80px;
+  width: 90%;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.education img {
+  width: 100%;
+}
+.education p {
+  text-align: left;
+}
 
+@media screen and (max-width: 1080px) {
+  .my-story {
+    grid-template-columns: 1fr;
+    grid-template-rows: 500px 600px;
+    gap: 50px;
+  }
+  .ambitionstory {
+    grid-template-columns: 1fr;
+    grid-template-rows: 500px 600px;
+    gap: 50px;
+  }
+  .ambition-image {
+    order: 2;
+  }
+  .my-image img,
+  .ambition-image img {
+    width: auto;
+    height: 600px;
+  }
+}
+@media screen and (max-width: 930px) {
+  .education {
+    padding: 10px;
+    width: 95%;
+  }
+}
+@media screen and (max-width: 870px) {
+  .education {
+    grid-template-rows: 150px 1fr;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .education {
+    grid-template-rows: 227px 1fr;
+  }
+}
+@media screen and (max-width: 700px) {
+  .my-story {
+    grid-template-rows: 600px 600px;
+  }
+}
+@media screen and (max-width: 580px) {
+  .ambitionstory,
+  .my-story {
+    grid-template-rows: 700px 600px;
+  }
+}
+@media screen and (max-width: 520px) {
+  .ambitionstory,
+  .my-story {
+    grid-template-rows: 950px 600px;
+  }
+}
 /*
 =============== 
 footer Section

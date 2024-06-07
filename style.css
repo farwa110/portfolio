@@ -66,27 +66,44 @@ Hero Section
 ===============
 */
 .hero-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
   width: 100%;
 }
 .hero-info h2 {
   white-space: nowrap;
 }
 .underline {
-  border: 2px solid white;
+  border: 2px solid rgba(20, 255, 236, 1);
   padding: 10px;
-  display: inline-block;
+  height: 69%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
-
+.underline h1 {
+  margin-bottom: 0px;
+}
+.underline h2 {
+  color: rgba(20, 255, 236, 1);
+}
 .hero {
   height: 700px;
+  margin-top: 200px;
 }
 .hero-box {
   display: grid;
-  grid-template-columns: 500px 500px;
-  grid-template-rows: 600px;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  grid-template-rows: 700px;
   justify-content: space-around;
   align-items: center;
+  margin: 0px 20px 0 20px;
 }
+
 .hero-img {
   display: flex;
   align-items: center;
@@ -95,9 +112,25 @@ Hero Section
   width: 100%;
 }
 .hero-photo {
-  height: 50%;
+  height: 75%;
 }
-
+.color-frame {
+  height: 500px;
+  width: 400px;
+  margin-top: -10%;
+  margin-left: 13%;
+  position: absolute;
+  border: solid 1px rgba(20, 255, 236, 1);
+  opacity: 0.5;
+}
+.color-frame-2 {
+  height: 500px;
+  width: 400px;
+  margin-top: -4%;
+  margin-left: 8%;
+  position: absolute;
+  border: solid 5px rgba(20, 255, 236, 1);
+}
 /*
 =============== 
 footer Section
@@ -110,7 +143,7 @@ footer {
   width: 100%;
   text-align: center;
   padding: 20px;
-  margin-top: 12rem;
+  margin-top: 6rem;
   color: white;
 }
 .social-icons img {
@@ -158,10 +191,15 @@ contact page
   width: 100%;
   margin-top: 8rem;
   height: 500px;
-  margin-left: 38rem;
+
   border: 3px solid rgba(20, 255, 236, 1);
 }
-
+.contact-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
 .contact-form h2 {
   margin-bottom: 20px;
   font-size: 24px;
@@ -207,26 +245,32 @@ contact page
 ===============
 */
 
-@media screen and (min-width: 800px) {
-  /* h1 {
-    font-size: 4rem;
-  } */
-  /* h2 {
-    font-size: 2.5rem;
-  } */
-  /* h3 {
-    font-size: 1.75rem;
+@media screen and (max-width: 1280px) {
+  .hero {
+    height: 85vh;
   }
-  h4 {
-    font-size: 1rem;
+  .hero-box {
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
   }
-  body {
-    font-size: 1rem;
+  .hero-img {
+    order: 1;
   }
-  h1,
-  h2,
-  h3,
-  h4 {
-    line-height: 1;
-  } */
+  .hero-info {
+    order: 2;
+  }
+  .underline {
+    border: none;
+  }
+}
+@media screen and (max-width: 800px) {
+  .hero-info h2 {
+    white-space: unset;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 560px) {
+  .underline h1 {
+    text-align: center;
+  }
 }
