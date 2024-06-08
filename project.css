@@ -94,16 +94,6 @@ li {
   color: white;
 }
 
-/* div:nth-child(odd) ul {
-  list-style: none;
-  padding-left: 0;
-} */
-
-/* .tema-image + div {
-  display: flex;
-  flex-direction: column;
-} */
-
 ul {
   margin-top: 50px;
 }
@@ -125,9 +115,6 @@ ul {
   background-color: whitesmoke;
 }
 
-/* .button-view {
-  margin-left: 25%;
-} */
 .col2 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
