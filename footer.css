@@ -1,3 +1,9 @@
+/*
+=============== 
+footer Section
+===============
+*/
+
 footer {
   background-color: #001412;
   opacity: 0.7;
@@ -7,18 +13,14 @@ footer {
   margin-top: 12rem;
   color: white;
 }
-/* .footer-container {
+.social-icons {
   display: flex;
-} */
-/* .social-icons {
-  display: grid;
-  grid-template-rows: 1fr;
-} */
+  align-items: center;
+  justify-content: center;
+}
 .social-icons img {
   width: 40px;
   height: 40px;
-  /* vertical-align: middle; */
-  margin-left: 50%;
 }
 .footer-text p {
   margin: 10px 0;

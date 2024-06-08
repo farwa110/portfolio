@@ -141,48 +141,7 @@ ul {
   margin-bottom: 5%;
   width: 100%;
 }
-/*
-=============== 
-footer Section
-===============
-*/
 
-footer {
-  background-color: #001412;
-  opacity: 0.7;
-  width: 100%;
-  text-align: center;
-  padding: 20px;
-  margin-top: 12rem;
-  color: white;
-}
-.social-icons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.social-icons img {
-  width: 40px;
-  height: 40px;
-}
-.footer-text p {
-  margin: 10px 0;
-}
-
-.footer-text {
-  margin-bottom: 10px;
-}
-
-.footer-social-icons {
-  margin-top: 10px;
-}
-.social-icons {
-  margin-top: 20px;
-}
-
-.social-icons a {
-  margin: 0 10px;
-}
 @media screen and (max-width: 1300px) {
   .col3 {
     gap: 20px;

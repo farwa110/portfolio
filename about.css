@@ -13,7 +13,7 @@ Variables
   --radius: 0.5rem;
 }
 /*
-=============== 
+===============
 Global Styles
 ===============
 */
@@ -82,13 +82,13 @@ h4 {
   align-items: center;
 }
 .my-text {
-  height: 100%; /* Set the height to match the image */
-  width: 100%; /* Set the width to match the image */
+  height: 100%;
+  width: 100%;
   box-sizing: border-box;
 }
 .my-ambition {
-  height: 100%; /* Set the height to match the image */
-  width: 100%; /* Set the width to match the image */
+  height: 100%;
+  width: 100%;
   box-sizing: border-box;
 }
 .my-image,
@@ -197,42 +197,4 @@ p.support {
   .my-story {
     grid-template-rows: 950px 600px;
   }
-}
-/*
-=============== 
-footer Section
-===============
-*/
-
-footer {
-  background-color: #001412;
-  opacity: 0.7;
-  width: 100%;
-  text-align: center;
-  padding: 20px;
-  margin-top: 12rem;
-  color: white;
-}
-.social-icons img {
-  width: 40px;
-  height: 40px;
-  vertical-align: middle;
-}
-.footer-text p {
-  margin: 10px 0;
-}
-
-.footer-text {
-  margin-bottom: 10px;
-}
-
-.footer-social-icons {
-  margin-top: 10px;
-}
-.social-icons {
-  margin-top: 20px;
-}
-
-.social-icons a {
-  margin: 0 10px;
 }
