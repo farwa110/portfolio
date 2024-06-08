@@ -117,6 +117,12 @@ contact page
 .contact-form button:hover {
   background: rgb(96, 150, 146);
 }
+
+@media screen and (max-width: 440px) {
+  .contact-form {
+    max-width: 340px;
+  }
+}
 /*
 =============== 
  end of contact page
