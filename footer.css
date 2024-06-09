@@ -7,7 +7,7 @@ footer Section
 footer {
   background-color: #001412;
   opacity: 0.7;
-  width: 100%;
+  /* width: 100%; */
   text-align: center;
   padding: 20px;
   margin-top: 12rem;

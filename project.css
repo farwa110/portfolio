@@ -136,6 +136,9 @@ ul {
   .col2 {
     gap: 20px;
   }
+  #tema-5 {
+    margin-top: 16%;
+  }
 }
 @media screen and (max-width: 1180px) {
   .tema-image p {
@@ -153,6 +156,9 @@ ul {
     width: 35%;
     margin-top: 20%;
   }
+  #tema-5 {
+    margin-top: 32%;
+  }
 }
 @media screen and (max-width: 620px) {
   .col3,
@@ -164,5 +170,16 @@ ul {
   .col3,
   .col2 {
     grid-template-columns: 400px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .col3,
+  .col2 {
+    grid-template-columns: 360px;
+  }
+}
+@media screen and (max-width: 510px) {
+  #tema-5 {
+    margin-top: 42%;
   }
 }

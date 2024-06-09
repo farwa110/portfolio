@@ -204,3 +204,19 @@ p.support {
     height: 410px;
   }
 }
+@media screen and (max-width: 470px) {
+  .education {
+    grid-template-rows: 120px 1fr;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+  }
+  .education img {
+    width: 30%;
+  }
+  .support {
+    font-size: 18px;
+    padding: 0px 20px;
+    line-height: 1.5;
+  }
+}

@@ -149,3 +149,34 @@ Hero Section
     text-align: center;
   }
 }
+@media screen and (max-width: 460px) {
+  .hero {
+    height: 100vh;
+  }
+  .color-frame {
+    width: 350px;
+
+    margin-left: 0%;
+  }
+  .color-frame-2 {
+    width: 360px;
+    margin-top: -4%;
+    margin-left: 0%;
+  }
+}
+@media screen and (max-width: 390px) {
+  .hero {
+    height: 110vh;
+  }
+  .color-frame {
+    width: 330px;
+    margin-left: -2%;
+  }
+  .color-frame-2 {
+    width: 340px;
+    margin-left: -2%;
+  }
+  .hero-box {
+    margin: 0px 10px 0 10px;
+  }
+}
