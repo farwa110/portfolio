@@ -129,6 +129,19 @@ ul {
   width: 100%;
 }
 
+.tema-image {
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 5px 5px rgba(190, 231, 5, 0.5); /* Initial glow effect */
+  }
+  100% {
+    box-shadow: 0 0 20px 10px rgba(190, 231, 5, 0.5); /* Increased glow effect */
+  }
+}
+
 @media screen and (max-width: 1300px) {
   .col3 {
     gap: 20px;

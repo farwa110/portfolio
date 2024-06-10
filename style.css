@@ -102,6 +102,13 @@ Hero Section
 .hero-photo {
   height: 75%;
 }
+.hero-photo:hover {
+  height: 75%;
+  filter: grayscale(0.2);
+  opacity: 0.2;
+  transition: all 0.3s ease;
+}
+
 .color-frame {
   height: 500px;
   width: 400px;
@@ -137,16 +144,28 @@ Hero Section
   .underline {
     border: none;
   }
+  .hero-photo:hover {
+    filter: grayscale(0.2);
+    opacity: 0.2;
+  }
 }
 @media screen and (max-width: 800px) {
   .hero-info h2 {
     white-space: unset;
     text-align: center;
   }
+  .hero-photo:hover {
+    filter: grayscale(0.2);
+    opacity: 0.2;
+  }
 }
 @media screen and (max-width: 560px) {
   .underline h1 {
     text-align: center;
+  }
+  .hero-photo:hover {
+    filter: grayscale(0.2);
+    opacity: 0.2;
   }
 }
 @media screen and (max-width: 460px) {
@@ -163,6 +182,10 @@ Hero Section
     margin-top: -4%;
     margin-left: 0%;
   }
+  .hero-photo:hover {
+    filter: grayscale(0.2);
+    opacity: 0.2;
+  }
 }
 @media screen and (max-width: 390px) {
   .hero {
@@ -178,5 +201,9 @@ Hero Section
   }
   .hero-box {
     margin: 0px 10px 0 10px;
+  }
+  .hero-photo:hover {
+    filter: grayscale(0.2);
+    opacity: 0.2;
   }
 }
