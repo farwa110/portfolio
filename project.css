@@ -138,7 +138,7 @@ ul {
     box-shadow: 0 0 5px 5px rgba(190, 231, 5, 0.5); /* Initial glow effect */
   }
   100% {
-    box-shadow: 0 0 20px 10px rgba(190, 231, 5, 0.5); /* Increased glow effect */
+    box-shadow: 0 0 30px 20px rgba(190, 231, 5, 0.5); /* Increased glow effect */
   }
 }
 

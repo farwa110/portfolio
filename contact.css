@@ -113,6 +113,18 @@ contact page
   cursor: pointer;
   margin-left: 4.8rem;
 }
+.contact-form {
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 5px 5px rgba(211, 211, 211, 0.5); /* Initial glow effect with Light Gray */
+  }
+  100% {
+    box-shadow: 0 0 40px 30px rgba(211, 211, 211, 0.5); /* Increased glow effect */
+  }
+}
 
 .contact-form button:hover {
   background: rgb(96, 150, 146);

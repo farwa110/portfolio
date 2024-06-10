@@ -102,6 +102,19 @@ Hero Section
 .hero-photo {
   height: 75%;
 }
+
+.hero-photo {
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 5px 5px rgba(211, 211, 211, 0.5); /* Initial glow effect with Light Gray */
+  }
+  100% {
+    box-shadow: 0 0 40px 30px rgba(211, 211, 211, 0.5); /* Increased glow effect */
+  }
+}
 .hero-photo:hover {
   height: 75%;
   filter: grayscale(0.2);
@@ -154,18 +167,10 @@ Hero Section
     white-space: unset;
     text-align: center;
   }
-  .hero-photo:hover {
-    filter: grayscale(0.2);
-    opacity: 0.2;
-  }
 }
 @media screen and (max-width: 560px) {
   .underline h1 {
     text-align: center;
-  }
-  .hero-photo:hover {
-    filter: grayscale(0.2);
-    opacity: 0.2;
   }
 }
 @media screen and (max-width: 460px) {
@@ -182,10 +187,6 @@ Hero Section
     margin-top: -4%;
     margin-left: 0%;
   }
-  .hero-photo:hover {
-    filter: grayscale(0.2);
-    opacity: 0.2;
-  }
 }
 @media screen and (max-width: 390px) {
   .hero {
@@ -201,9 +202,5 @@ Hero Section
   }
   .hero-box {
     margin: 0px 10px 0 10px;
-  }
-  .hero-photo:hover {
-    filter: grayscale(0.2);
-    opacity: 0.2;
   }
 }
